@@ -1,0 +1,12 @@
+.header {
+    background-color: #333; /* Mesmo fundo do Navbar */
+    color: white; /* Texto branco */
+    text-align: center;
+    padding: 2rem 0; /* Espaçamento superior e inferior */
+  }
+  
+  .header-title {
+    margin: 0; /* Remove a margem padrão do h1 */
+    font-size: 2.5rem; /* Tamanho do título */
+    font-family: 'Arial', sans-serif; /* Personalize a fonte */
+  }

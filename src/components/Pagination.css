@@ -1,0 +1,22 @@
+.pagination-container {
+  display: flex;
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  gap: 1rem; /* Adiciona espaço entre os botões */
+  padding: 1rem; /* Espaçamento interno para deixar um respiro ao redor */
+}
+
+.btn-pagination {
+  padding: 0.5rem 1rem; /* Adiciona padding ao botão */
+  border: 1px solid #ddd; /* Borda leve nos botões */
+  border-radius: 4px; /* Bordas arredondadas */
+  background-color: #00bcd4; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  font-size: 1rem; /* Tamanho da fonte */
+  cursor: pointer; /* Altera o cursor para indicar que é clicável */
+  transition: background-color 0.3s, transform 0.2s; /* Efeito suave para hover */
+}
+
+.btn-pagination:hover {
+  background-color: #0097a7; /* Cor de fundo ao passar o mouse */
+
+}

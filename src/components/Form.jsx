@@ -1,7 +1,7 @@
 //import React, { useState } from 'react';
 import './Form.css';
 
-const Form = ({ characters, setStatus, setGenders, search, setSearch, setPageNumber }) => {
+const Form = ({ setStatus, setGenders, search, setSearch, setPageNumber }) => {
 
   const handleInputChange = (e) => {
 
@@ -46,18 +46,20 @@ const Form = ({ characters, setStatus, setGenders, search, setSearch, setPageNum
             placeholder="Digite o nome"
           />
         </label>
+
         <label>
-          <select placeholder="Selecione o genero" name="gender" id="gender" onChange={handleCheckRadio}>
+          <select name="gender" id="gender" onChange={handleCheckRadio}>
+            <option value="" disabled selected>Selecione o genero</option>
             <option value="male">Homem</option>
             <option value="female">Mulher</option>
             <option value="unknow">Desconhecido</option>
             <option value="">Todos</option>
-
           </select>
         </label>
 
         <label>
-          <select placeholder="Selecione o status" name="status" id="status" onChange={handleCheckRadioStatus} >
+          <select name="status" id="status" onChange={handleCheckRadioStatus} >
+            <option value="" disabled selected>Selecione o status</option>
             <option value="alive">Vivo</option>
             <option value="dead">Morto</option>
             <option value="unknow">Desconhecido</option>

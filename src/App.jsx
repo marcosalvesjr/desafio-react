@@ -15,7 +15,8 @@ function App() {
 
 
 
-  let url = `https://rickandmortyapi.com/api/character?page=${pageNumber}&name=${search}&gender=${genders}&status=${status}`;
+  const url = `https://rickandmortyapi.com/api/character?page=${pageNumber}&name=${search}&gender=${genders}&status=${status}`;
+  
   useEffect(() => {
     const fetchCharacters = async () => {
       const response = await fetch(url);
@@ -27,13 +28,9 @@ function App() {
   return (
     <>
       <Header />
-       <Form setStatus={setStatus} setGenders={setGenders} characters={characters} setPageNumber={setPageNumber} search={search} setSearch={setSearch} />
+       <Form setStatus={setStatus} setGenders={setGenders} setPageNumber={setPageNumber} search={search} setSearch={setSearch} />
       <CharacterCard characters={characters} />
       <Pagination prevPage={pageNumber} setPageNumber={setPageNumber} />
-
-
-
-
     </>
   )
 }

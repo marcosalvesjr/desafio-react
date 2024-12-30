@@ -10,7 +10,8 @@ const CharacterCard = ({ characters }) => {
                     <div id={character.id} className='card'>
                         <img src={character.image} />
                         <h2>{character.name}</h2>
-                        <p>{character.status}</p>
+                        <p>Status: {character.status}</p>
+                        <p>Localização:{character.origin.name} </p>
                     </div>
                 ))}
             </div>

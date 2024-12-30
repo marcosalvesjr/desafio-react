@@ -4,7 +4,6 @@ import './Form.css';
 const Form = ({ setStatus, setGenders, search, setSearch, setPageNumber }) => {
 
   const handleInputChange = (e) => {
-
     setSearch(e.target.value);
 
 
@@ -48,7 +47,7 @@ const Form = ({ setStatus, setGenders, search, setSearch, setPageNumber }) => {
         </label>
 
         <label>
-          <select name="gender" id="gender" onChange={handleCheckRadio}>
+          <select  name="gender" id="gender" onChange={handleCheckRadio}>
             <option value="" disabled selected>Selecione o genero</option>
             <option value="male">Homem</option>
             <option value="female">Mulher</option>
@@ -58,7 +57,7 @@ const Form = ({ setStatus, setGenders, search, setSearch, setPageNumber }) => {
         </label>
 
         <label>
-          <select name="status" id="status" onChange={handleCheckRadioStatus} >
+          <select  name="status" id="status" onChange={handleCheckRadioStatus} >
             <option value="" disabled selected>Selecione o status</option>
             <option value="alive">Vivo</option>
             <option value="dead">Morto</option>
